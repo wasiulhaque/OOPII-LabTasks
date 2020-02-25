@@ -18,12 +18,15 @@ public class AStackTest {
         @Test
     void test2()
     {
-        int expected = 6;
+        int expected = 4;
         AStack test = new AStack(false);
         test.push(3);
+        test.push(4);
         test.push(2);
         test.push(6);
         test.push(5);
+        test.pop();
+        test.pop();
         test.pop();
         int actual = test.minOrMax();
 
